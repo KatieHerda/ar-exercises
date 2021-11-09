@@ -4,7 +4,7 @@ puts "Exercise 1"
 puts "----------"
 
 # Your code goes below here ...
-# Store.create(name: "", annual_revenue: NUM, mens_apparel: BOOLEAN, womens_apparel: BOOLEAN)
+# Store.create(id, name, annual_revenue, mens_apparel, womens_apparel, created_at, updated_at)
 
 Store.create(name: "Burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: true)
 Store.create(name: "Richmond", annual_revenue: 1260000, mens_apparel: false, womens_apparel: true)
