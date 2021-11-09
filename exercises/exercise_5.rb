@@ -8,12 +8,6 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
-
-@total_revenue = Store.sum(:annual_revenue)
-puts "Total revenue for all stores: #{@total_revenue}"
-
-@average_revenue = Store.average(:annual_revenue)
-puts "Average revenue for all stores: #{@average_revenue}"
-
-@generating_1mill = Store.where("annual_revenue > ?", 1000000).count
-puts "Number of stores with over 1 million in revenue: #{@generating_1mill}"
+puts "Total revenue for all stores: #{Store.sum(:annual_revenue)}"
+puts "Average revenue for all stores: #{Store.average(:annual_revenue)}"
+puts "Number of stores with over 1 million in revenue: #{Store.where("annual_revenue > ?", 1000000).count}"
